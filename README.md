@@ -7,6 +7,7 @@ A production-ready, full-stack E-Commerce single-page application engineered usi
 
 ## 🏛 System Architecture Overview
 
+```text
 NexusGear/
 ├── backend/
 │   ├── config/
@@ -39,40 +40,39 @@ NexusGear/
 │   └── server.js                 # Express application entrypoint
 │
 └── frontend/
-├── public/                   # Static browser assets
-├── src/
-│   ├── api/
-│   │   └── api.js            # Axios client with JWT request interceptor
-│   ├── components/
-│   │   ├── AdminSidebar.jsx  # Admin portal vertical navigation
-│   │   ├── Footer.jsx        # Customer care links & navigation footer
-│   │   ├── Navbar.jsx        # Role-aware brand header, cart counter & auth dropdown
-│   │   ├── ProductCard.jsx   # Item card with live stock alerts & cart action
-│   │   ├── ProtectedRoute.jsx# Auth & role-based route guard
-│   │   └── StarRating.jsx    # Interactive 5-star rating component
-│   ├── context/
-│   │   ├── AuthContext.jsx   # Global user state & token persistence
-│   │   └── CartContext.jsx   # Cart state with live price sync & localStorage
-│   ├── pages/
-│   │   ├── admin/
-│   │   │   ├── AdminDashboard.jsx # 4 KPI cards, gross revenue, low-stock watchlist
-│   │   │   ├── AdminOrders.jsx    # Master orders fulfillment status manager
-│   │   │   ├── AdminProducts.jsx  # Catalog CRUD table & quick restock controls
-│   │   │   └── AdminSupport.jsx   # Split-inbox support desk & reply console
-│   │   ├── Auth.jsx          # Clean Sign In / Register portal
-│   │   ├── Checkout.jsx      # Encrypted Stripe Elements checkout & address validation
-│   │   ├── Home.jsx          # Storefront product grid, category filter, search
-│   │   ├── OrderHistory.jsx  # Past customer orders with fulfillment status tracking
-│   │   ├── OrderSuccess.jsx  # Transaction confirmation receipt & stock summary
-│   │   ├── ProductDetails.jsx# Deep item specs, stock status & user reviews
-│   │   └── Support.jsx       # Customer inquiry submission & ticket tracker
-│   ├── App.jsx               # Application routes & layout wrapper
-│   ├── index.css             # Tailwind base styles & custom UI themes
-│   └── main.jsx              # React DOM mounting
-├── index.html                # HTML5 entry with modern typography
-├── package.json              # Frontend dependencies
-└── vite.config.js            # Vite build configuration with local API proxy
-
+    ├── public/                   # Static browser assets
+    ├── src/
+    │   ├── api/
+    │   │   └── api.js            # Axios client with JWT request interceptor
+    │   ├── components/
+    │   │   ├── AdminSidebar.jsx  # Admin portal vertical navigation
+    │   │   ├── Footer.jsx        # Customer care links & navigation footer
+    │   │   ├── Navbar.jsx        # Role-aware brand header, cart counter & auth dropdown
+    │   │   ├── ProductCard.jsx   # Item card with live stock alerts & cart action
+    │   │   ├── ProtectedRoute.jsx# Auth & role-based route guard
+    │   │   └── StarRating.jsx    # Interactive 5-star rating component
+    │   ├── context/
+    │   │   ├── AuthContext.jsx   # Global user state & token persistence
+    │   │   └── CartContext.jsx   # Cart state with live price sync & localStorage
+    │   ├── pages/
+    │   │   ├── admin/
+    │   │   │   ├── AdminDashboard.jsx # 4 KPI cards, gross revenue, low-stock watchlist
+    │   │   │   ├── AdminOrders.jsx    # Master orders fulfillment status manager
+    │   │   │   ├── AdminProducts.jsx  # Catalog CRUD table & quick restock controls
+    │   │   │   └── AdminSupport.jsx   # Split-inbox support desk & reply console
+    │   │   ├── Auth.jsx          # Clean Sign In / Register portal
+    │   │   ├── Checkout.jsx      # Encrypted Stripe Elements checkout & address validation
+    │   │   ├── Home.jsx          # Storefront product grid, category filter, search
+    │   │   ├── OrderHistory.jsx  # Past customer orders with fulfillment status tracking
+    │   │   ├── OrderSuccess.jsx  # Transaction confirmation receipt & stock summary
+    │   │   ├── ProductDetails.jsx# Deep item specs, stock status & user reviews
+    │   │   └── Support.jsx       # Customer inquiry submission & ticket tracker
+    │   ├── App.jsx               # Application routes & layout wrapper
+    │   ├── index.css             # Tailwind base styles & custom UI themes
+    │   └── main.jsx              # React DOM mounting
+    ├── index.html                # HTML5 entry with modern typography
+    ├── package.json              # Frontend dependencies
+    └── vite.config.js            # Vite build configuration with local API proxy
 
 ---
 
