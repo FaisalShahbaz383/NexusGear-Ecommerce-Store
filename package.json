@@ -1,0 +1,21 @@
+{
+  "name": "secure-ecommerce-engine-checkout-sandbox",
+  "version": "1.0.0",
+  "description": "Task 4: Secure E-Commerce Engine with Checkout Sandbox (MERN + Stripe Elements)",
+  "scripts": {
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "seed": "cd backend && npm run seed",
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "build": "npm --prefix frontend run build"
+  },
+  "keywords": [
+    "mern",
+    "ecommerce",
+    "stripe",
+    "checkout-sandbox",
+    "inventory-sync"
+  ],
+  "author": "Principal Full-Stack Software Engineer",
+  "license": "ISC"
+}
